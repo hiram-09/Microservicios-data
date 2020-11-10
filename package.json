@@ -1,0 +1,19 @@
+{
+  "name": "microservicio-data",
+  "version": "0.0.0",
+  "description": "Webcomponent microservicio-data following open-wc recommendations",
+  "author": "microservicio-data",
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.js",
+  "scripts": {
+    "start": "web-dev-server --app-index demo/index.html --node-resolve --open --watch"
+  },
+  "dependencies": {
+    "lit-html": "^1.1.2",
+    "lit-element": "^2.2.1"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.0.12"
+  }
+}
