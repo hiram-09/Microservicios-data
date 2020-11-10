@@ -25,7 +25,7 @@ export class MicroservicioData extends LitElement {
   firstUpdated(){
     fetch(this.url)
       .then(response => response.json())
-      .then(data => new CustomEvent('listarItems', {lista: { items: data}}));
+      .then(this.dispatchEvent(data => new CustomEvent('listarItems', {lista: { items: data}})));
   }
 
   render() {
